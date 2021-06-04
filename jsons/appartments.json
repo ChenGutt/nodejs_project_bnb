@@ -1,0 +1,71 @@
+[
+{
+"extras": [
+"mobile airco",
+"nespresso machine",
+"balcony"
+],
+"createdAt": "2021-04-21T10:03:56.366Z",
+"_id": "607ff89e0aed3a1e0c840761",
+"hostName": "Chen Gutt",
+"appartmentDesc": "Spacious appartment in the city center of Groningen",
+"location": "Groningen",
+"img": "https://cf.bstatic.com/images/hotel/max1024x768/244/244257696.jpg",
+"perNight": 70,
+"user_id": "607fe777e5b79c46943fc3c4",
+"propertyNumber": 380652,
+"__v": 0
+},
+{
+"extras": [
+"city view",
+"jacuzzi",
+"back yard"
+],
+"createdAt": "2021-04-21T10:13:13.754Z",
+"_id": "607ffabb0754c22578f842f8",
+"hostName": "Jan Bakker",
+"appartmentDesc": "Best location in the center of Amsterdam!",
+"location": "Amsterdam, Netherlands",
+"img": "https://www.habitatapartments.com/resources/apartments/846x564/grand-amstel-canal-view-apartment-amsterdam_(3).jpg",
+"perNight": 160,
+"user_id": "607ffa5ab121f45280a19a41",
+"propertyNumber": 607366,
+"__v": 0
+},
+{
+"extras": [
+"coffee machine",
+"balcony",
+"Netflix"
+],
+"createdAt": "2021-04-21T10:16:07.339Z",
+"_id": "607ffb8f0133ac3808dcdb0a",
+"hostName": "Danielle V",
+"appartmentDesc": "Cozy studio in Shoreditch London!",
+"location": "London, UK",
+"img": "https://bakerstreetapts.co.uk/content/uploads/1600x680-grndfloor-1260x680.jpg",
+"perNight": 140,
+"user_id": "607fe7cce5b79c46943fc3c5",
+"propertyNumber": 314446,
+"__v": 0
+},
+{
+"extras": [
+"balcony",
+"sea view",
+"jacuzzi",
+"breakfast service to the room"
+],
+"createdAt": "2021-04-21T10:26:15.205Z",
+"_id": "607ffdfe6a84d35a4caff79a",
+"hostName": "Moshe Levi",
+"appartmentDesc": "a cabin in the north of Israel with great view!",
+"location": "Amirim, Israel",
+"img": "https://pic.zimmer4me.co.il/images/bikze/2.jpg",
+"perNight": 130,
+"user_id": "607ffdde6a84d35a4caff799",
+"propertyNumber": 651742,
+"__v": 0
+}
+]

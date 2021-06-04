@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+li {
+    width: 100px;
+    background-color: rgb(219, 100, 8);
+    color: #fff;
+    margin: 2px;
+    padding: 4px;
+    text-align: center;
+    font-size: 0.8rem;
+    border-radius: 2px;
+    transition: all .3s;
+}
+
+li:hover {
+    background-color: rgba(111, 88, 66, 0.741);
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    box-shadow: .5px .5px 2px #000;
+    width: 100px;
+    border-radius: 2px;
+    transition: all .5s;
+}
+
+button:hover {
+    transform: scale(1.1)
+}
