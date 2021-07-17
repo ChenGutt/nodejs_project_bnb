@@ -79,28 +79,6 @@ router.post("/login", async (req, res) => {
     }
 })
 
-router.get("/addFavotires", (req, res) => {
-    res.json({
-        msg: "its working"
-    })
-})
-
-router.patch("/addFavotires", auth, async (req, res) => {
-    let validBody = validFavotires(req.body);
-    if (validBody.error) {
-        return res.status(400).json(validBody.error.details);
-    }
-    try {
-        let user = await UserModel.updateOne({
-            _id: req.tokenData._id
-        }, req.body);
-        res.json(user)
-    } catch (err) {
-        console.log(err)
-        res.status(400).json(err)
-    }
-
-})
 
 router.get("/userinfo", auth, async (req, res) => {
     try {
@@ -114,23 +92,49 @@ router.get("/userinfo", auth, async (req, res) => {
     }
 })
 
-router.get("/yourfavs", auth, async (req, res) => {
-    try {
-        let user = await UserModel.findOne({
-            _id: req.tokenData._id
-        });
-        let fav_ar = user.favorites;
-        let userFavs = await AppartmentModel.find({
-            propertyNumber: {
-                $in: fav_ar
-            }
-        });
-        res.json(userFavs)
-    } catch (err) {
-        console.log(err)
-        res.status(400).json(err)
-    }
-})
+//router not in use
+
+// router.get("/addFavotires", (req, res) => {
+//     res.json({
+//         msg: "its working"
+//     })
+// })
+
+// router.patch("/addFavotires", auth, async (req, res) => {
+//     let validBody = validFavotires(req.body);
+//     if (validBody.error) {
+//         return res.status(400).json(validBody.error.details);
+//     }
+//     try {
+//         let user = await UserModel.updateOne({
+//             _id: req.tokenData._id
+//         }, req.body);
+//         res.json(user)
+//     } catch (err) {
+//         console.log(err)
+//         res.status(400).json(err)
+//     }
+
+// })
+
+
+// router.get("/yourfavs", auth, async (req, res) => {
+//     try {
+//         let user = await UserModel.findOne({
+//             _id: req.tokenData._id
+//         });
+//         let fav_ar = user.favorites;
+//         let userFavs = await AppartmentModel.find({
+//             propertyNumber: {
+//                 $in: fav_ar
+//             }
+//         });
+//         res.json(userFavs)
+//     } catch (err) {
+//         console.log(err)
+//         res.status(400).json(err)
+//     }
+// })
 
 
 module.exports = router;
